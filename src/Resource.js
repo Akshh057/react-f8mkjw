@@ -18,9 +18,10 @@ const Resource = ({ match }) => {
       setShow(true);
   }, []);
   return (
-    <div className="main__div">
+    <>
       {show ? (
-        apiData.map((item, idx) => {
+        <div className="main__div">
+        {apiData.map((item, idx) => {
           return (
             <Route path={match.path} key={`${idx}${item.name}`}>
               <Link to={`${match.url}/${item.id}`}>
@@ -31,19 +32,24 @@ const Resource = ({ match }) => {
                   <h2> {item.name} </h2>
                   <h2>{item.year} </h2>
                   {currentUrl[currentUrl.length - 1] == item.id && (
+                    <span>
+                      <span className="pantone_value">Pantone Value </span>
                       <h2>{item.pantone_value} </h2>
-                    )}
+                    </span>
+                  )}
                 </div>
               </Link>
             </Route>
           );
-        })
+        })}
+    </div>
+
       ) : (
         <>
           <Route path={`${match.path}/:id`} component={ResourceId} />
         </>
       )}
-    </div>
+    </>
   );
 };
 

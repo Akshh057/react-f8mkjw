@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   transition: 0.3s ease-in-out;
+  border: 1px solid red;
 }
 .id__div {
   height: 50vh;
