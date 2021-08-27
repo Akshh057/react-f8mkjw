@@ -1,4 +1,4 @@
-.main__div1{
+.main__div1 {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
   transition: 0.3s ease-in-out;
 }
-.id__div{
+.id__div {
   height: 50vh;
   width: 30vw;
   display: flex;
@@ -16,11 +16,11 @@
   text-transform: capitalize;
   transition: 0.3s ease-in-out;
 }
-.pantone_value{
+.pantone_value {
   margin-left: -60px;
 }
-@media(max-width:768px){
-  .id__div{
+@media (max-width: 768px) {
+  .id__div {
     width: 70vw;
   }
 }

@@ -30,9 +30,9 @@ const Resource = ({ match }) => {
                 >
                   <h2> {item.name} </h2>
                   <h2>{item.year} </h2>
-                  {/* {currentUrl[currentUrl.length - 1] == item.id && (
+                  {currentUrl[currentUrl.length - 1] == item.id && (
                       <h2>{item.pantone_value} </h2>
-                    )} */}
+                    )}
                 </div>
               </Link>
             </Route>
