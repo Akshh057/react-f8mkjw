@@ -1,0 +1,26 @@
+.main__div1{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.id__div{
+  height: 50vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+  transition: 0.3s ease-in-out;
+}
+.pantone_value{
+  margin-left: -60px;
+}
+@media(max-width:768px){
+  .id__div{
+    width: 70vw;
+  }
+}

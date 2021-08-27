@@ -1,0 +1,24 @@
+.main__div {
+  min-height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  place-items: center;
+  grid-gap: 50px;
+  padding: 1em;
+}
+.main__items {
+  height: 30vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
